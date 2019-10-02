@@ -1,0 +1,12 @@
+.homepage {
+  height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(farthest-corner at 05% 30%, transparent 30%, var(--color-primary-lighter) 85%, var(--color-primary-light) 110%);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 5rem 2px;
+  grid-template-columns: 3fr 60% 1fr;
+  row-gap: 1rem;
+}
