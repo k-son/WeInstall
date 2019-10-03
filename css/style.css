@@ -28,7 +28,11 @@ body {
 
 .homepage {
   height: 100vh;
+  min-height: 55rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: radial-gradient(farthest-corner at 5% 30%, transparent 30%, var(--color-primary-lighter) 85%, var(--color-primary-light) 110%); }
 
 .header {
@@ -37,27 +41,58 @@ body {
   grid-template-columns: 3fr 60% 1fr;
   row-gap: 1rem; }
 
-.topNav {
+.homepage-bottom {
+  display: grid;
+  grid-template-rows: auto 2px;
+  grid-template-columns: minmax(10rem, 2fr) minmax(30rem, 60rem) 7fr;
+  row-gap: 1rem; }
+
+.top-nav {
   grid-row: 1;
   grid-column: 2;
   justify-self: end;
   align-self: end; }
-  .topNav__list {
+  .top-nav__list {
     display: flex;
     list-style-type: none; }
-    .topNav__list__item:not(:last-of-type) {
+    .top-nav__list__item:not(:last-of-type) {
       margin-right: 2rem; }
-  .topNav__link:link, .topNav__link:visited {
+  .top-nav__link:link, .top-nav__link:visited {
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--color-primary-dark);
     text-transform: capitalize; }
-  .topNav__link:hover {
+  .top-nav__link:hover {
     cursor: pointer; }
 
 .gradient--top {
   grid-row: 2;
-  grid-column: 2 / 4;
+  grid-column: 2 / -1;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, var(--color-white) 0%, var(--color-primary-lighter) 20%, var(--color-primary-light) 30%, var(--color-primary) 80%, var(--color-primary-dark) 100%); }
+  background-image: linear-gradient(to right, var(--color-white) 0%, var(--color-primary-lighter) 20%, var(--color-primary-light) 30%, var(--color-primary) 65%, var(--color-primary-dark) 100%); }
+
+.homepage-bottom {
+  margin-bottom: 5rem; }
+  .homepage-bottom__slogan {
+    grid-row: 1;
+    grid-column: 2; }
+    .homepage-bottom__slogan__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none; }
+      .homepage-bottom__slogan__list__item {
+        font-size: 1.4rem;
+        color: var(--color-primary-dark);
+        line-height: 2.2rem; }
+        .homepage-bottom__slogan__list__item:not(:last-of-type) {
+          margin-right: 2rem; }
+        .homepage-bottom__slogan__list__item:last-of-type {
+          margin-right: 4rem; }
+
+.gradient--bottom {
+  grid-row: 2;
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--color-primary) 0, var(--color-primary-light) 80%, var(--color-primary-lighter) 100%); }
