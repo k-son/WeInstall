@@ -10,15 +10,25 @@
 
 .header {
   display: grid;
-  grid-template-rows: 5rem 2px;
+  grid-template-rows: 6rem 2px;
   grid-template-columns: 3fr 60% 1fr;
   row-gap: .8rem;
+
+  @media all and (max-width: 400px) {
+    grid-template-columns: 3fr 70% 1fr;
+  }
 }
 
 .homepage-middle-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media all and (max-width: 700px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+  }
 }
 
 .homepage-bottom {
@@ -26,4 +36,8 @@
   grid-template-rows: auto 2px;
   grid-template-columns: minmax(10rem, 2fr) minmax(30rem, 60rem) 7fr;
   row-gap: 1rem;
+
+  @media all and (max-width: 500px) {
+    grid-template-columns: minmax(5rem, 2fr) minmax(30rem, 60rem) 2fr;
+  }
 }
