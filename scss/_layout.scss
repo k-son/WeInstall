@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 2rem;
 
   @media all and (max-width: 700px) {
     flex-direction: column;
