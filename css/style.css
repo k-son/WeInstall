@@ -63,8 +63,7 @@ body {
   @media all and (max-width: 700px) {
     .homepage-middle-content {
       flex-direction: column;
-      justify-content: space-evenly;
-      height: 90%; } }
+      height: 100%; } }
 
 .homepage-bottom {
   display: grid;
@@ -161,7 +160,8 @@ body {
         .logo__text-container--mobile {
           display: block;
           text-align: center;
-          font-size: 1.4rem; } }
+          font-size: 1.4rem;
+          margin-bottom: 3rem; } }
   .logo__text--upper {
     font-size: 1.5em;
     font-weight: 300;
@@ -184,7 +184,7 @@ body {
   padding: 3rem; }
   @media all and (max-width: 700px) {
     .side-nav {
-      margin-top: 2rem; } }
+      margin-top: 4rem; } }
   .side-nav__list {
     list-style-type: none; }
     .side-nav__list__item {
