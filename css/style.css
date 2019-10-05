@@ -19,7 +19,10 @@ body {
   box-sizing: border-box;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background-image: radial-gradient(farthest-corner at 5% 30%, transparent 30%, var(--color-primary-lighter) 85%, var(--color-primary-light) 110%);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 *::selection {
   background-color: var(--color-primary-dark);
@@ -37,12 +40,11 @@ body {
 
 .homepage {
   height: 100vh;
-  min-height: 55rem;
+  min-height: 65rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-image: radial-gradient(farthest-corner at 5% 30%, transparent 30%, var(--color-primary-lighter) 85%, var(--color-primary-light) 110%); }
+  justify-content: space-between; }
 
 .header {
   display: grid;
@@ -179,8 +181,7 @@ body {
 
 .side-nav {
   margin-top: 10rem;
-  padding: 3rem;
-  background-color: rgba(255, 255, 255, 0.3); }
+  padding: 3rem; }
   @media all and (max-width: 700px) {
     .side-nav {
       margin-top: 2rem; } }
