@@ -1,0 +1,18 @@
+.bg-text {
+  width: 95%;
+  overflow: hidden;
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+  z-index: -1;
+  font-family: 'Heebo', sans-serif;
+  font-size: 25rem;
+  font-weight: 800;
+  letter-spacing: .5rem;
+  opacity: .05;
+
+  @media all and (max-width: 750px) {
+    width: 90%;
+    bottom: 2rem;
+  }
+}
