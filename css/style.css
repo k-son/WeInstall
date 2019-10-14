@@ -39,6 +39,7 @@ body {
 
 .homepage {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -56,7 +57,7 @@ body {
 
 .homepage-middle-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 5rem;
   margin-bottom: 2rem; }
@@ -184,7 +185,7 @@ body {
   padding: 3rem; }
   @media all and (max-width: 700px) {
     .side-nav {
-      margin-top: 4rem; } }
+      margin-top: 1rem; } }
   .side-nav__list {
     list-style-type: none; }
     .side-nav__list__item {
